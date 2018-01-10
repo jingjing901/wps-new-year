@@ -1,0 +1,41 @@
+@-webkit-keyframes rotate_left {
+    0% {
+        -webkit-transform: translate(-50%) rotate(0deg) ; /* Safari 和 Chrome */
+    }
+    100% {
+        -webkit-transform: translate(-50%) rotate(360deg); /* Safari 和 Chrome */
+    }
+}
+@-webkit-keyframes rotate_right {
+    0% {
+        -webkit-transform: translate(-50%) rotate(0deg) ; /* Safari 和 Chrome */
+    }
+    100% {
+        -webkit-transform: translate(-50%) rotate(-360deg); /* Safari 和 Chrome */
+    }
+}
+@-webkit-keyframes rotate_comein {
+    0% {
+        /*top:8.64rem;*/
+        left: -1.5rem;
+        -webkit-transform: rotate(0deg) ; /* Safari 和 Chrome */
+    }
+    /*50%{*/
+        /*top:8.00rem;*/
+        /*left: -1.4rem;*/
+        /*-webkit-transform: rotate(-360deg); !* Safari 和 Chrome *!*/
+    /*}*/
+    100% {
+        /*top:7.45rem;*/
+        left: -1.07rem;
+        -webkit-transform: rotate(60deg); /* Safari 和 Chrome */
+    }
+}
+@-webkit-keyframes rotate_comeout{
+    0% {
+        -webkit-transform: translate(-50%) rotate(0deg) ; /* Safari 和 Chrome */
+    }
+    100% {
+        -webkit-transform: translate(-50%) rotate(-360deg); /* Safari 和 Chrome */
+    }
+}

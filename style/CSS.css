@@ -1,0 +1,662 @@
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    -webkit-font-size-adjust: none;
+}
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+.swiper-container,.content{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+.swiper-slide {
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    overflow: hidden;
+    /*-webkit-box-pack: center;*/
+    /*-ms-flex-pack: center;*/
+    /*!*-webkit-justify-content: center;*!*/
+    /*!*justify-content: center;*!*/
+    /*-webkit-box-align: center;*/
+    /*-ms-flex-align: center;*/
+    /*-webkit-align-items: center;*/
+    /*align-items: center;*/
+}
+.swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    top:15.60rem;
+    left: 0;
+    width: 100%
+}
+.swiper-pagination-bullet {
+    width: 0.2rem;
+    height: 0.2rem;
+    display: inline-block;
+    border-radius: 100%;
+    background: #000;
+    opacity: .2
+}
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #007aff
+}
+.main {
+    position: relative;
+    width: 10.80rem;
+    /*overflow: hidden;*/
+}
+.main .box {
+    position: absolute;
+    width: 10.80rem;
+    height: 17.29rem;
+    left: 0;
+    top: 0;
+    /*margin-top: -6.1rem;*/
+}
+img{
+    position: absolute;
+}
+.shareCard{
+    width: 3.27rem;
+    height: 0.6rem;
+    top: 16.20rem;
+    left: 50%;
+    transform: translate(-50%);
+}
+.makeCard{
+    width: 10.80rem;
+    height: 0.72rem;
+    top: 16.20rem;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: 0;
+    -webkit-animation: fadeInUpCenter 1s 3s;
+    -webkit-animation-fill-mode: forwards;
+}
+.beginBtn{
+    width: 5.61rem;
+    height: 0.46rem;
+    top: 16.20rem;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: 0;
+    -webkit-animation: fadeInUpCenter 1s 3s;
+    -webkit-animation-fill-mode: forwards;
+}
+.bigflower{
+    position: absolute;
+    top:-12rem;
+    left: 50%;
+    transform: translate(-50%);
+}
+.bigflower .center{
+    left: 50%;
+    transform: translate(-50%);
+}
+/*logo*/
+.img01{
+    /*margin-left: -0.5rem;*/
+    opacity: 0;
+    -webkit-animation: slideInDownLang 1s 0.2s;
+    -webkit-animation-fill-mode: forwards;
+}
+.img09{
+    opacity: 0;
+    -webkit-animation: jackInTheBox 1s 2.2s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+/*转圈三花环*/
+.img10{
+    width: 6.48rem;
+    height: 6.68rem;
+    top: 0.8rem;
+    -webkit-animation: rotate_left 80s  infinite 2s;
+}
+.img11{
+    width: 4.25rem;
+    height: 4.16rem;
+    top:2.06rem;
+    -webkit-animation: rotate_right 80s  infinite 2s;
+}
+.img12{
+    width: 2.09rem;
+    height: 2.05rem;
+    top:3.12rem;
+    -webkit-animation: rotate_left 80s  infinite 2s;
+}
+/*happy new year*/
+.img13{
+    opacity: 0;
+    width: 4.29rem;
+    height: 1.56rem;
+    top:11.12rem;
+    left: 50%;
+    transform: translate(-50%);
+    -webkit-animation: fadeIn 2s 2s;
+    -webkit-animation-fill-mode: forwards;
+
+}
+.img14{
+    opacity: 0;
+    -webkit-animation: fadeIn 2s 2.4s;
+    -webkit-animation-fill-mode: forwards;
+}
+/*第一屏*/
+.p1 .bigflower{
+    position: relative;
+    margin: 0 auto;
+}
+.p1 .img01{
+    width: 2.40rem;
+    height: 0.61rem;
+    top: 13.20rem;
+    left: 50%;
+    margin-left: 0;
+    opacity: 1;
+    transform: translate(-50%);
+}
+.p1 .img02{
+    width: 0.99rem;
+    height: 5.91rem;
+    left: 1.30rem;
+    top:-5.91rem;
+}
+.p1 .img03{
+    width: 0.69rem;
+    height: 7.56rem;
+    left: 7.52rem;
+    top:-7.56rem;
+}
+.p1 .img04{
+    width: 0.55rem;
+    height: 8.04rem;
+    left: 8.40rem;
+    top:-8.04rem;
+}
+.p1 .img05{
+    width: 1.48rem;
+    height: 4.90rem;
+    left: 8.28rem;
+    top:-4.90rem;
+}
+.p1 .img06{
+    width: 2.33rem;
+    height: 2.38rem;
+    top:7.45rem;
+    left: -1.07rem;
+    -webkit-animation: rotate_comein 1s ease-in 0s;
+}
+.p1 .img07{
+    width: 2.92rem;
+    height: 2.99rem;
+    top:11.12rem;
+    right: -1.44rem;
+}
+.p1 .img08{
+    width: 1.49rem;
+    height: 10.85rem;
+}
+.p1 .img09{
+    width: 0.71rem;
+    height: 0.51rem;
+    top:9.9rem;
+}
+.p1 .img13{
+    width: 4.29rem;
+    height: 1.56rem;
+    top:11.12rem;
+    left: 50%;
+    transform: translate(-50%);
+}
+.p1 .img14{
+    width: 1.06rem;
+    height: 1.06rem;
+    top:3.6rem;
+}
+/*第二屏*/
+.p2 .bigflower{
+    left:74%;
+}
+.p2 .img01{
+    width: 0.50rem;
+    height: 2.00rem;
+    top: 0.88rem;
+    left: 0.94rem;
+    margin-left: -0.5rem;
+    opacity: 0;
+    /*transform: translate(-100%);*/
+}
+.p2 .img02{
+    width: 2.59rem;
+    height: 8.61rem;
+    left: 0;
+    top:-8.61rem;
+}
+.p2 .img03{
+    width: 0.99rem;
+    height: 5.91rem;
+    left: 2.18rem;
+    top:-5.91rem;
+}
+.p2 .img04{
+    width: 1.48rem;
+    height: 4.90rem;
+    left: 2.85rem;
+    top:-4.90rem;
+}
+.p2 .img05{
+    width: 0.69rem;
+    height: 5.89rem;
+    left: 3.77rem;
+    top:-5.89rem;
+}
+.p2 .img06{
+    width: 0.55rem;
+    height: 8.04rem;
+    left: 4.25rem;
+    top:-8.04rem;
+}
+.p2 .img07{
+    width: 2.33rem;
+    height: 14.19rem;
+    left: 7.88rem;
+    top:-14.19rem;
+}
+.p2 .img08{
+    width: 1.49rem;
+    height: 10.54rem;
+}
+.p2 .img09{
+    width: 1.01rem;
+    height: 0.93rem;
+    top:9.38rem;
+}
+.p2 .img10{
+    top: 0.47rem;
+}
+.p2 .img11{
+    top:1.73rem;
+}
+.p2 .img12{
+    top:2.79rem;
+}
+.p2 .img14{
+    width: 6.58rem;
+    height: 0.73rem;
+    top:14.15rem;
+    left: 50%;
+    transform: translate(-50%);
+}
+/*第三屏*/
+.p3 .bigflower{
+    left:40%;
+}
+.p3 .img01{
+    width: 0.50rem;
+    height: 2.00rem;
+    top: 7.32rem;
+    left: 1.72rem;
+}
+.p3 .img02{
+    width: 0.99rem;
+    height: 7.82rem;
+    left: 0.36rem;
+    top:-7.82rem;
+}
+.p3 .img03{
+    width: 2.33rem;
+    height: 12.29rem;
+    left: 0.46rem;
+    top: -12.29rem;
+}
+.p3 .img04{
+    width: 3.59rem;
+    height: 10.60rem;
+    left: 5.6rem;
+    top:-10.60rem;
+}
+.p3 .img05{
+    width: 0.69rem;
+    height: 3.08rem;
+    left: 7.94rem;
+    top:-3.08rem;
+}
+.p3 .img06{
+    width: 0.55rem;
+    height: 7.74rem;
+    left: 8.78rem;
+    top:-7.74rem;
+}
+.p3 .img07{
+    width: 1.48rem;
+    height: 4.90rem;
+    left: 8.90rem;
+    top:-4.90rem;
+}
+.p3 .img08{
+    width: 1.49rem;
+    height: 10.54rem;
+}
+.p3 .img09{
+    width: 0.93rem;
+    height: 0.83rem;
+    top:9.38rem;
+    opacity: 0;
+}
+.p3 .img10{
+    top: 0.47rem;
+}
+.p3 .img11{
+    top:1.73rem;
+}
+.p3 .img12{
+    top:2.79rem;
+}
+.p3 .img14{
+    width: 6.80rem;
+    height: 1.73rem;
+    top:13.26rem;
+    left: 50%;
+    transform: translate(-50%);
+}
+/*第四屏*/
+.p4 .img01{
+    width: 0.50rem;
+    height: 2.00rem;
+    margin-left: 0.5rem;
+    top: 5.83rem;
+    left: 8.30rem;
+}
+.p4 .img02{
+    width: 0.55rem;
+    height: 5.74rem;
+    left: 0.4rem;
+    top:-5.74rem;
+}
+.p4 .img03{
+    width: 1.48rem;
+    height: 8.41rem;
+    left: 0.74rem;
+    top:-8.41rem;
+}
+.p4 .img04{
+    width: 0.99rem;
+    height: 6.73rem;
+    left: 1.22rem;
+    top:-6.73rem;
+}
+.p4 .img05{
+    width: 2.32rem;
+    height: 10.05rem;
+    left: 2.25rem;
+    top:-10.05rem;
+}
+.p4 .img06{
+    width: 0.69rem;
+    height: 8.65rem;
+    left: 7.39rem;
+    top:-8.65rem;
+}
+.p4 .img07{
+    width: 3.26rem;
+    height: 12.68rem;
+    left: 7.22rem;
+    top:-12.68rem;
+}
+.p4 .img08{
+    width: 1.49rem;
+    height: 10.74rem;
+}
+.p4 .img09{
+    width: 0.94rem;
+    height: 0.93rem;
+    top:9.52rem;
+}
+.p4 .img10{
+    top: 0.67rem;
+}
+.p4 .img11{
+    top:1.92rem;
+}
+.p4 .img12{
+    top:2.98rem;
+}
+.p4 .img14{
+    width: 6.58rem;
+    height: 0.73rem;
+    top:14.15rem;
+    left: 50%;
+    transform: translate(-50%);
+}
+/*第五屏*/
+.p5 .img01{
+    width: 0.50rem;
+    height: 2.00rem;
+    top: 0.56rem;
+    left: 1.80rem;
+}
+.p5 .img02{
+    width: 0.55rem;
+    height: 5.74rem;
+    left: 0.4rem;
+    top:-5.74rem;
+}
+.p5 .img03{
+    width: 1.48rem;
+    height: 8.41rem;
+    left: 0.74rem;
+    top:-8.41rem;
+}
+.p5 .img04{
+    width: 0.99rem;
+    height: 6.73rem;
+    left: 1.22rem;
+    top:-6.73rem;
+}
+.p5 .img05{
+    width: 2.32rem;
+    height: 10.05rem;
+    left: 2.25rem;
+    top:-10.05rem;
+}
+.p5 .img06{
+    width: 0.69rem;
+    height: 8.65rem;
+    left: 7.39rem;
+    top:-8.65rem;
+}
+.p5 .img07{
+    width: 3.26rem;
+    height: 12.68rem;
+    left: 7.22rem;
+    top:-12.68rem;
+}
+.p5 .img08{
+    width: 1.49rem;
+    height: 10.74rem;
+}
+.p5 .img09{
+    width: 1.04rem;
+    height: 1.02rem;
+    top:10.51rem;
+    left: 8.87rem;
+}
+.p5 .img10{
+    top: 0.67rem;
+}
+.p5 .img11{
+    top:1.92rem;
+}
+.p5 .img12{
+    top:2.98rem;
+}
+.p5 .img14{
+    width: 6.58rem;
+    height: 0.73rem;
+    top:14.15rem;
+    left: 50%;
+    transform: translate(-50%);
+}
+/*第六屏*/
+.p6 .bigflower{
+    position: relative;
+    left:40%;
+    /*transform: translate(0,20rem);*/
+    /*transition: transform 2s;*/
+}
+.p6 .img01{
+    width: 0.50rem;
+    height: 2.00rem;
+    top: 1.04rem;
+    left: 8.84rem;
+}
+.p6 .img02{
+    width: 2.32rem;
+    height: 14.16rem;
+    left: 0.34rem;
+    top:-14.16rem;
+}
+.p6 .img03{
+    width: 0.99rem;
+    height: 5.71rem;
+    left: 6.50rem;
+    top:-5.71rem;
+}
+.p6 .img04{
+    width: 3.39rem;
+    height: 10.50rem;
+    left: 5.6rem;
+    top:-10.50rem;
+}
+.p6 .img05{
+    width: 0.69rem;
+    height: 3.08rem;
+    left: 7.94rem;
+    top:-3.08rem;
+}
+.p6 .img06{
+    width: 1.48rem;
+    height: 4.90rem;
+    left: 8.02rem;
+    top:-4.90rem;
+}
+.p6 .img07{
+    width: 0.55rem;
+    height: 8.04rem;
+    left: 9.64rem;
+    top:-8.04rem;
+}
+.p6 .img08{
+    width: 1.49rem;
+    height: 10.54rem;
+}
+.p6 .img09{
+    width: 0.97rem;
+    height: 0.93rem;
+    top:9.32rem;
+}
+.p6 .img10{
+    top: 0.47rem;
+}
+.p6 .img11{
+    top:1.73rem;
+}
+.p6 .img12{
+    top:2.79rem;
+}
+.p6 .img14{
+    width: 4.66rem;
+    height: 1.73rem;
+    top:13.26rem;
+    left: 50%;
+    transform: translate(-50%);
+}
+/*第七屏*/
+.p7 .bigflower{
+    left:78%;
+    /*transform: translate(0,20rem);*/
+    /*transition: transform 2s;*/
+}
+.p7 .img01{
+    width: 0.50rem;
+    height: 2.00rem;
+    top: 0.88rem;
+    left: 8.58rem;
+}
+.p7 .img02{
+    width: 0.99rem;
+    height: 6.68rem;
+    left: 1.16rem;
+    top:-6.68rem;
+}
+.p7 .img03{
+    width: 2.32rem;
+    height: 10.34rem;
+    left: 1.04rem;
+    top:-10.34rem;
+}
+.p7 .img04{
+    width: 0.69rem;
+    height: 5.60rem;
+    left: 2.74rem;
+    top:-5.60rem;
+}
+.p7 .img05{
+    width: 1.48rem;
+    height: 8.08rem;
+    left: 2.84rem;
+    top:-8.08rem;
+}
+.p7 .img06{
+    width: 3.36rem;
+    height: 5.67rem;
+    left: 3.72rem;
+    top:-5.67rem;
+}
+.p7 .img07{
+    width: 0.55rem;
+    height: 3.22rem;
+    left: 6.56rem;
+    top:-3.22rem;
+}
+.p7 .img08{
+    width: 1.48rem;
+    height: 13.26rem;
+}
+.p7 .img09{
+    width: 1.32rem;
+    height: 1.34rem;
+    top:6.00rem;
+}
+.p7 .img10{
+    top: 3.24rem;
+}
+.p7 .img11{
+    top:4.48rem;
+}
+.p7 .img12{
+    top:5.59rem;
+}
+.p7 .img14{
+    width: 6.58rem;
+    height: 0.73rem;
+    top:14.15rem;
+    left: 50%;
+    transform: translate(-50%);
+}

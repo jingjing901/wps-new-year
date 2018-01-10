@@ -1,0 +1,254 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html data-use-rem="1080">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <meta name="wap-font-scale" content="no">
+    <meta http-equiv="pragma" content="no-cache">
+    <title>HAPPY NEW YEAR</title>
+    <link type="text/css" rel="stylesheet" href="style/global.css"/>
+    <link type="text/css" rel="stylesheet" href="style/swiper.min.css"/>
+    <link type="text/css" rel="stylesheet" href="style/animation.css"/>
+    <link type="text/css" rel="stylesheet" href="style/animate.min.css"/>
+    <link type="text/css" rel="stylesheet" href="style/cssstyle.css"/>
+    <script src="js/rem.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/history.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/swiper.animate.min.js"></script>
+    <script src="js/zepto.min.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="http://app.flyfinger.com/api/js/wx.js"></script>
+    <script src="http://app.flyfinger.com/api/js/share.js"></script>
+    <script>
+        function getName() {
+            var urlFirst = document.location.toString();
+            urlFirst = urlFirst.substr(0, urlFirst.lastIndexOf('/'));
+            var url = $(".swiper-slide-active").attr("name");
+            var shareLinkUrl = urlFirst + '' + '/' + url + '.html';
+            window.history.pushState({}, 0, urlFirst + '' + '/' + url + '.html');
+            return shareLinkUrl;
+        }
+        //先定义分享参数对象,全参数为（可按需配置 ）：
+        var options = {
+            'id':"wps-new-year", //项目名
+            'title':"titleDemo",
+            'desc':"descDemo",
+            'link': shareLinkUrl,
+            'imgUrl':"http://h5.flyfinger.com/2017/shareDemo/share.jpg",
+            //        'type':'分享类型,music、video或link，不填默认为link',
+            //        'dataUrl':' 如果type是music或video，则要提供数据链接，默认为空',
+            //        'success':function(){
+            //            alert('分享成功加调');
+            //        },
+            //        'cancel':function(){
+            //            alert('分享取消回调');
+            //        },
+            //        'trigger':function(){
+            //            alert('调起微信菜单');
+            //        },
+            //        'fail':function(){
+            //            alert('调用失败回调');
+            //        }
+        };
+        //后定义实例(注：实例名不能为关键字和'wx')：
+        var _wx_share = new WxShare(options);
+        //如要在中途重置分享信息，调用setOptions方法：
+        //    _wx_share.setOptions({
+        //        'title':'修改后的分享标题'
+        //    });
+        //如要在中途重置分享给朋友，调用setAppMessageOptions方法：
+        //    _wx_share.setAppMessageOptions({
+        //        'title':'修改后分享给朋友的分享标题'
+        //    });
+        //如要在中途重置分享到朋友圈，调用setTimeLineOptions方法：
+        _wx_share.setTimeLineOptions({
+            'title':"朋友圈title重置"
+        });
+    </script>
+</head>
+<body onload="drop()" style="cursor: pointer">
+<!--<div style="display: none;"><img id="shareImage" src=""/></div>-->
+<div class="swiper-container ">
+    <div class="swiper-wrapper">
+        <section class="swiper-slide p1 box" name="index">
+            <img src="img/00/00_img01.png" alt="" class="img01 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="2s" swiper-animate-delay="3.0s">
+            <img src="img/00/00_img02.png" alt="" class="topDisS img02">
+            <img src="img/00/00_img03.png" alt="" class="topDisM img03">
+            <img src="img/00/00_img04.png" alt="" class="topDisL img04">
+            <img src="img/00/00_img05.png" alt="" class="topDisS img05">
+            <img src="img/00/00_img06.png" alt="" class="img06 ani" swiper-animate-effect="rotateInDownLeft" swiper-animate-duration="2s" swiper-animate-delay="1.0s">
+            <img src="img/00/00_img07.png" alt="" class="img07 ani" swiper-animate-effect="rotateInUpLeft" swiper-animate-duration="2s" swiper-animate-delay="1.0s">
+            <div class="topDisM bigflower">
+                <img src="img/00/00_img08.png" alt="" class="img08 center">
+                <img src="img/00/00_img09.png" alt="" class="img09 center">
+                <img src="img/00/00_img10.png" alt="" class="img10 center ani" swiper-animate-effect="rotate_left" swiper-animate-duration="80s" swiper-animate-delay="2s">
+                <img src="img/00/00_img11.png" alt="" class="img11 center" swiper-animate-effect="rotate_right" swiper-animate-duration="80s" swiper-animate-delay="2s">
+                <img src="img/00/00_img12.png" alt="" class="img12 center ani" swiper-animate-effect="rotate_left" swiper-animate-duration="80s" swiper-animate-delay="2s">
+                <img src="img/00/00_img14.png " alt="" class="img14 center ani" swiper-animate-effect="fadeIn" swiper-animate-duration="2s" swiper-animate-delay="1.2s">
+            </div>
+            <img src="img/00/00_img13.png" alt="" class="img13 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="2s" swiper-animate-delay="2.2s">
+            <img src="img/begin.gif" alt="" class="beginBtn">
+        </section>
+        <section class="swiper-slide p2 box" name="younglove">
+            <img src="img/01/01_img01.png" alt="" class="ani img01" swiper-animate-effect="slideInDownLang" swiper-animate-duration="0.8s" swiper-animate-delay="0.2s">
+            <img src="img/01/01_img02.png" alt="" class="img02 ani" swiper-animate-effect="slideInDown" swiper-animate-duration="1s" swiper-animate-delay="0.2s">
+            <img src="img/01/01_img03.png" alt="" class="img03 ani" swiper-animate-effect="slideInDown" swiper-animate-duration="1.2s" swiper-animate-delay="0.3s">
+            <img src="img/01/01_img04.png" alt="" class="img04 ani" swiper-animate-effect="slideInDown" swiper-animate-duration="1.4s" swiper-animate-delay="0.2s">
+            <img src="img/01/01_img05.png" alt="" class="img05 ani" swiper-animate-effect="slideInDown" swiper-animate-duration="0.8s" swiper-animate-delay="0.4s">
+            <img src="img/01/01_img06.png" alt="" class="img06 ani" swiper-animate-effect="slideInDown" swiper-animate-duration="0.6s" swiper-animate-delay="0.2s">
+            <img src="img/01/01_img07.png" alt="" class="img07 ani" swiper-animate-effect="slideInDown" swiper-animate-duration="1s" swiper-animate-delay="0.4s">
+            <div class="bigflower ani" swiper-animate-effect="slideInDown" swiper-animate-duration="1.4s" swiper-animate-delay="0.4s">
+                <img src="img/01/01_img08.png" alt="" class="img08 center ani">
+                <img src="img/01/01_img09.png" alt="" class="img09 center ani" swiper-animate-effect="jackInTheBox" swiper-animate-duration="1s" swiper-animate-delay="3s">
+                <img src="img/01/01_img10.png" alt="" class="img10 center ani" swiper-animate-effect="rotate_left" swiper-animate-duration="80s" swiper-animate-delay="2s">
+                <img src="img/01/01_img11.png" alt="" class="img11 center ani" swiper-animate-effect="rotate_right" swiper-animate-duration="80s" swiper-animate-delay="2s">
+                <img src="img/01/01_img12.png" alt="" class="img12 center ani" swiper-animate-effect="rotate_left" swiper-animate-duration="80s" swiper-animate-delay="2s">
+            </div>
+            <img src="img/01/01_img13.png" alt="" class="img13 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="2s" swiper-animate-delay="2.2s">
+            <img src="img/01/01_img14.png" alt="" class="img14 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="2s" swiper-animate-delay="3.0s">
+            <!--<div style="z-index: 999;height: 4rem" class="ani"  swiper-animate-effect="slideInUp" swiper-animate-duration="1s" swiper-animate-delay="5s"><img src="img/shareCard.png" alt="" class="shareCard"></div>-->
+        </section>
+        <section class="swiper-slide p3 box" name="profoundfriendship">
+            <img src="img/02/02_img01.png" alt="" class="ani img01" swiper-animate-effect="slideInDownLang" swiper-animate-duration="0.8s" swiper-animate-delay="0.2s">
+            <img src="img/02/02_img02.png" alt="" class="ani img02" swiper-animate-effect="slideInDown" swiper-animate-duration="1.2s" swiper-animate-delay="0.4s">
+            <img src="img/02/02_img03.png" alt="" class="ani img03" swiper-animate-effect="slideInDown" swiper-animate-duration="0.6s" swiper-animate-delay="0.2s">
+            <img src="img/02/02_img04.png" alt="" class="ani img04" swiper-animate-effect="slideInDown" swiper-animate-duration="1.0s" swiper-animate-delay="0.6s">
+            <img src="img/02/02_img05.png" alt="" class="ani img05" swiper-animate-effect="slideInDown" swiper-animate-duration="1.4s" swiper-animate-delay="0.4s">
+            <img src="img/02/02_img06.png" alt="" class="ani img06" swiper-animate-effect="slideInDown" swiper-animate-duration="0.8s" swiper-animate-delay="0.3s">
+            <img src="img/02/02_img07.png" alt="" class="ani img07" swiper-animate-effect="slideInDown" swiper-animate-duration="0.6s" swiper-animate-delay="0.2s">
+            <div class="ani bigflower" swiper-animate-effect="slideInDown" swiper-animate-duration="1.4s" swiper-animate-delay="0.4s">
+                <img src="img/02/02_img08.png" alt="" class="img08 center">
+                <img src="img/02/02_img09.png" alt="" class="img09 center ani" swiper-animate-effect="jackInTheBox" swiper-animate-duration="1s" swiper-animate-delay="3s">
+                <img src="img/02/02_img10.png" alt="" class="img10 center" swiper-animate-effect="rotate_left" swiper-animate-duration="80s" swiper-animate-delay="2s">
+                <img src="img/02/02_img11.png" alt="" class="img11 center" swiper-animate-effect="rotate_right" swiper-animate-duration="80s" swiper-animate-delay="2s">
+                <img src="img/02/02_img12.png" alt="" class="img12 center" swiper-animate-effect="rotate_left" swiper-animate-duration="80s" swiper-animate-delay="2s">
+            </div>
+            <img src="img/02/02_img13.png" alt="" class="img13 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="2s" swiper-animate-delay="2.2s">
+            <img src="img/02/02_img14.png" alt="" class="img14 center ani" swiper-animate-effect="fadeIn" swiper-animate-duration="2s" swiper-animate-delay="3.0s">
+        </section>
+
+        <section class="swiper-slide p4 box" name="lastinglove">
+            <img src="img/03/03_img01.png" alt="" class="ani img01" swiper-animate-effect="slideInDownLang" swiper-animate-duration="0.8s" swiper-animate-delay="0.2s">
+            <img src="img/03/03_img02.png" alt="" class="ani img02" swiper-animate-effect="slideInDown" swiper-animate-duration="1.4s" swiper-animate-delay="0.4s">
+            <img src="img/03/03_img03.png" alt="" class="ani img03" swiper-animate-effect="slideInDown" swiper-animate-duration="0.6s" swiper-animate-delay="0.2s">
+            <img src="img/03/03_img04.png" alt="" class="ani img04" swiper-animate-effect="slideInDown" swiper-animate-duration="1.2s" swiper-animate-delay="0.2s">
+            <img src="img/03/03_img05.png" alt="" class="ani img05" swiper-animate-effect="slideInDown" swiper-animate-duration="1.4s" swiper-animate-delay="0.4s">
+            <img src="img/03/03_img06.png" alt="" class="ani img06" swiper-animate-effect="slideInDown" swiper-animate-duration="0.6s" swiper-animate-delay="0.6s">
+            <img src="img/03/03_img07.png" alt="" class="ani img07" swiper-animate-effect="slideInDown" swiper-animate-duration="0.8s" swiper-animate-delay="0.2s">
+            <div class="ani bigflower" swiper-animate-effect="slideInDown" swiper-animate-duration="1.4s" swiper-animate-delay="0.4s">
+                <img src="img/03/03_img08.png" alt="" class="img08 center">
+                <img src="img/03/03_img09.png" alt="" class="img09 center ani" swiper-animate-effect="jackInTheBox" swiper-animate-duration="1s" swiper-animate-delay="3s">
+                <img src="img/03/03_img10.png" alt="" class="img10 center ani" swiper-animate-effect="rotate_left" swiper-animate-duration="80s" swiper-animate-delay="2s">
+                <img src="img/03/03_img11.png" alt="" class="img11 center ani" swiper-animate-effect="rotate_right" swiper-animate-duration="80s" swiper-animate-delay="2s">
+                <img src="img/03/03_img12.png" alt="" class="img12 center ani" swiper-animate-effect="rotate_left" swiper-animate-duration="80s" swiper-animate-delay="2s">
+            </div>
+            <img src="img/03/03_img13.png" alt="" class="img13 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="2s" swiper-animate-delay="2.2s">
+            <img src="img/03/03_img14.png" alt="" class="img14 center ani" swiper-animate-effect="fadeIn" swiper-animate-duration="2s" swiper-animate-delay="3.0s">
+        </section>
+
+        <section class="swiper-slide p5 box" name="youthPanter">
+            <img src="img/04/04_img01.png" alt="" class="ani img01"  swiper-animate-effect="slideInDownLang" swiper-animate-duration="0.8s" swiper-animate-delay="0.2s">
+            <img src="img/04/04_img02.png" alt="" class="ani img02"  swiper-animate-effect="slideInDown" swiper-animate-duration="1.4s" swiper-animate-delay="0.4s">
+            <img src="img/04/04_img03.png" alt="" class="ani img03"  swiper-animate-effect="slideInDown" swiper-animate-duration="0.6s" swiper-animate-delay="0.2s">
+            <img src="img/04/04_img04.png" alt="" class="ani img04"  swiper-animate-effect="slideInDown" swiper-animate-duration="1.0s" swiper-animate-delay="0.5s">
+            <img src="img/04/04_img05.png" alt="" class="ani img05"  swiper-animate-effect="slideInDown" swiper-animate-duration="0.8s" swiper-animate-delay="0.2s">
+            <img src="img/04/04_img06.png" alt="" class="ani img06"  swiper-animate-effect="slideInDown" swiper-animate-duration="1.2s" swiper-animate-delay="0.3s">
+            <img src="img/04/04_img07.png" alt="" class="ani img07"  swiper-animate-effect="slideInDown" swiper-animate-duration="1.0s" swiper-animate-delay="0.6s">
+            <div class="ani bigflower"  swiper-animate-effect="slideInDown" swiper-animate-duration="1.2s" swiper-animate-delay="0.4s">
+                <img src="img/04/04_img08.png" alt="" class="img08 center">
+                <img src="img/04/04_img10.png" alt="" class="img10 center ani" swiper-animate-effect="rotate_left" swiper-animate-duration="80s" swiper-animate-delay="2s">
+                <img src="img/04/04_img11.png" alt="" class="img11 center ani" swiper-animate-effect="rotate_right" swiper-animate-duration="80s" swiper-animate-delay="2s">
+                <img src="img/04/04_img12.png" alt="" class="img12 center ani" swiper-animate-effect="rotate_left" swiper-animate-duration="80s" swiper-animate-delay="2s">
+            </div>
+            <img src="img/04/04_img09.png" alt="" class="img09 center ani" swiper-animate-effect="jackInTheBox" swiper-animate-duration="1s" swiper-animate-delay="3s">
+            <img src="img/04/04_img13.png" alt="" class="img13 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="2s" swiper-animate-delay="2.2s">
+            <img src="img/04/04_img14.png" alt="" class="img14 center ani" swiper-animate-effect="fadeIn" swiper-animate-duration="2s" swiper-animate-delay="3.0s">
+        </section>
+
+        <section class="swiper-slide p6 box" name="familylove">
+            <img src="img/05/05_img01.png" alt="" class="ani img01" swiper-animate-effect="slideInDownLang" swiper-animate-duration="0.8s" swiper-animate-delay="0.4s">
+            <img src="img/05/05_img02.png" alt="" class="ani img02"  swiper-animate-effect="slideInDown" swiper-animate-duration="1.0s" swiper-animate-delay="0.2s">
+            <img src="img/05/05_img03.png" alt="" class="ani img03"  swiper-animate-effect="slideInDown" swiper-animate-duration="1.2s" swiper-animate-delay="0.4s">
+            <img src="img/05/05_img04.png" alt="" class="ani img04"  swiper-animate-effect="slideInDown" swiper-animate-duration="1.6s" swiper-animate-delay="0.6s">
+            <img src="img/05/05_img05.png" alt="" class="ani img05"  swiper-animate-effect="slideInDown" swiper-animate-duration="0.8s" swiper-animate-delay="0.3s">
+            <img src="img/05/05_img06.png" alt="" class="ani img06"  swiper-animate-effect="slideInDown" swiper-animate-duration="1.2s" swiper-animate-delay="0.2s">
+            <img src="img/05/05_img07.png" alt="" class="ani img07"  swiper-animate-effect="slideInDown" swiper-animate-duration="0.6s" swiper-animate-delay="0.4s">
+            <div class="ani bigflower" swiper-animate-effect="slideInDown" swiper-animate-duration="1.2s" swiper-animate-delay="0.4s">
+                <img src="img/05/05_img08.png" alt="" class="img08 center">
+                <img src="img/05/05_img09.png" alt="" class="img09 center ani" swiper-animate-effect="jackInTheBox" swiper-animate-duration="1s" swiper-animate-delay="3s">
+                <img src="img/05/05_img10.png" alt="" class="img10 center ani" swiper-animate-effect="rotate_left" swiper-animate-duration="80s" swiper-animate-delay="2s">
+                <img src="img/05/05_img11.png" alt="" class="img11 center ani" swiper-animate-effect="rotate_right" swiper-animate-duration="80s" swiper-animate-delay="2s">
+                <img src="img/05/05_img12.png" alt="" class="img12 center ani" swiper-animate-effect="rotate_left" swiper-animate-duration="80s" swiper-animate-delay="2s">
+            </div>
+            <img src="img/05/05_img13.png" alt="" class="img13 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="2s" swiper-animate-delay="2.2s">
+            <img src="img/05/05_img14.png" alt="" class="img14 center ani" swiper-animate-effect="fadeIn" swiper-animate-duration="2s" swiper-animate-delay="3.0s">
+        </section>
+
+        <section class="swiper-slide p7 box" name="bethankful">
+            <img src="img/06/06_img01.png" alt="" class="ani img01"  swiper-animate-effect="slideInDownLang" swiper-animate-duration="0.8s" swiper-animate-delay="1s">
+            <img src="img/06/06_img02.png" alt="" class="ani img02"  swiper-animate-effect="slideInDown" swiper-animate-duration="1.4s" swiper-animate-delay="0.2s">
+            <img src="img/06/06_img03.png" alt="" class="ani img03"  swiper-animate-effect="slideInDown" swiper-animate-duration="1.2s" swiper-animate-delay="0.2s">
+            <img src="img/06/06_img04.png" alt="" class="ani img04"  swiper-animate-effect="slideInDown" swiper-animate-duration="1.0s" swiper-animate-delay="0.2s">
+            <img src="img/06/06_img05.png" alt="" class="ani img05"  swiper-animate-effect="slideInDown" swiper-animate-duration="1.2s" swiper-animate-delay="0.2s">
+            <img src="img/06/06_img06.png" alt="" class="ani img06"  swiper-animate-effect="slideInDown" swiper-animate-duration="0.8s" swiper-animate-delay="0.2s">
+            <img src="img/06/06_img07.png" alt="" class="ani img07"  swiper-animate-effect="slideInDown" swiper-animate-duration="0.6s" swiper-animate-delay="0.2s">
+            <div class="ani bigflower" swiper-animate-effect="slideInDown" swiper-animate-duration="1.2s" swiper-animate-delay="0.4s">
+                <img src="img/06/06_img08.png" alt="" class="img08 center">
+                <img src="img/06/06_img09.png" alt="" class="img09 center ani" swiper-animate-effect="jackInTheBox" swiper-animate-duration="1s" swiper-animate-delay="3s">
+                <img src="img/06/06_img10.png" alt="" class="img10 center ani" swiper-animate-effect="rotate_left" swiper-animate-duration="80s" swiper-animate-delay="2s">
+                <img src="img/06/06_img11.png" alt="" class="img11 center ani" swiper-animate-effect="rotate_right" swiper-animate-duration="80s" swiper-animate-delay="2s">
+                <img src="img/06/06_img12.png" alt="" class="img12 center ani" swiper-animate-effect="rotate_left" swiper-animate-duration="80s" swiper-animate-delay="2s">
+            </div>
+            <img src="img/06/06_img13.png" alt="" class="img13 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="2s" swiper-animate-delay="2.2s">
+            <img src="img/06/06_img14.png" alt="" class="img14 center ani" swiper-animate-effect="fadeIn" swiper-animate-duration="2s" swiper-animate-delay="3.0s">
+            <!--<div style="z-index: 999;height: 4rem" class="ani"  swiper-animate-effect="slideInUp" swiper-animate-duration="1s" swiper-animate-delay="5s"><img src="img/shareCard.png" alt="" class="shareCard"></div>-->
+        </section>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <div style="z-index: 999;height: 0.8rem" class="share"><img src="img/shareCard.png" alt="" class="shareCard"></div>
+</div>
+<div class="alertWindow none" >
+    <img src="img/sharePoint.png">
+</div>
+<script>
+    function drop() {
+        $(".topDisL").animate({top: '0'}, 2000, "swing");
+        $(".topDisS").animate({top: '0'}, 1000, "linear");
+        $(".topDisM").animate({top: '0'}, 800, "swing");
+    }
+
+    $(".beginBtn").click(function () {
+        $(".firstPage").addClass("none").removeClass("appblock");
+        $(".swiper-container").removeClass("none").addClass("appblock");
+    })
+    $(".swiper-pagination").on("click",function() {
+        getName();
+        $(".alertWindow").removeClass("none").addClass("appblock");
+    });
+    $(".alertWindow").on("click",function() {
+        $(".alertWindow").removeClass("appblock").addClass("none");
+    });
+</script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        mousewheelControl : true,
+        onInit: function(swiper){
+            swiperAnimateCache(swiper);
+            swiperAnimate(swiper);
+        },
+        onSlideChangeEnd: function(swiper){
+            swiperAnimate(swiper);
+        }
+    });
+</script>
+</body>
+</html>
